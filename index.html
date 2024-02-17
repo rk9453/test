@@ -21,7 +21,43 @@
   </head>
 <body>
 
-  <!-- Educational Journey Popup -->
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Add this CSS to style the popup and overlay */
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border: 1px solid #ccc;
+            background-color: #fff;
+            padding: 20px;
+            z-index: 1000;
+        }
+
+        .popup-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Add this overlay div -->
+<div id="popupOverlay" class="popup-overlay"></div>
+
+<!-- Updated Educational Journey Popup -->
 <div id="educationalJourneyPopup" class="popup">
     <div class="popup-content">
         <span class="close" onclick="closeEducationalJourney()">&times;</span>
@@ -35,6 +71,35 @@
             <p>Academic Honors | Merit Scholarship Recipient</p>
             <p><strong>Technical Coursework:</strong> Analyzing Unstructured Data, Machine Learning, Data Mining, Cloud Computing, Business Analytics, Visual Analytics, Management of Organizational Data</p>
         </div>
+
+        <div class="education-entry">
+            <h3>Lahore University of Management Sciences</h3>
+            <p><strong>Bachelor of Science, Accounting and Finance</strong></p>
+            <p><strong>May 2019</strong></p>
+            <p><strong>Relevant Coursework:</strong> Financial Derivatives, Financial Modeling, Corporate Finance, Investments, Financial Reporting, Auditing, Econometrics, Strategic Business Management, Data Driven Marketing, Computational Problem Solving</p>
+        </div>
+
+    </div>
+</div>
+
+<!-- Add this JavaScript code -->
+<script>
+    function openEducationalJourney() {
+        document.getElementById("educationalJourneyPopup").style.display = "block";
+        document.getElementById("popupOverlay").style.display = "block";
+    }
+
+    function closeEducationalJourney() {
+        document.getElementById("educationalJourneyPopup").style.display = "none";
+        document.getElementById("popupOverlay").style.display = "none";
+    }
+</script>
+
+</body>
+</html>
+
+</div>
+
 
         <div class="education-entry">
             <h3>Lahore University of Management Sciences</h3>
