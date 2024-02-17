@@ -21,7 +21,7 @@
   </head>
 <body>
 
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -38,6 +38,16 @@
             background-color: #fff;
             padding: 20px;
             z-index: 1000;
+            border-radius: 30px;
+            max-width: 80%; /* Adjust the maximum width as needed */
+        }
+
+        .popup-content {
+            font-size: 14px;
+        }
+
+        .popup h2, .education-entry h3 {
+            font-size: 1.5em;
         }
 
         .popup-overlay {
@@ -80,6 +90,25 @@
         </div>
 
     </div>
+</div>
+
+<!-- Add this JavaScript code -->
+<script>
+    function openEducationalJourney() {
+        document.getElementById("educationalJourneyPopup").style.display = "block";
+        document.getElementById("popupOverlay").style.display = "block";
+    }
+
+    function closeEducationalJourney() {
+        document.getElementById("educationalJourneyPopup").style.display = "none";
+        document.getElementById("popupOverlay").style.display = "none";
+    }
+</script>
+
+</body>
+</html>
+
+
 </div>
 
 <!-- Add this JavaScript code -->
