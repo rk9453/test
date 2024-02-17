@@ -36,7 +36,7 @@
             transform: translate(-50%, -50%);
             border: 1px solid #ccc;
             background-color: #fff;
-            padding: 20px;
+            padding: 15px;
             z-index: 1000;
             border-radius: 30px;
             max-width: 80%; /* Adjust the maximum width as needed */
@@ -47,7 +47,7 @@
         }
 
         .popup h2, .education-entry h3 {
-            font-size: 1.2em; /* Decreased the font size */
+            font-size: 1em; /* Decreased the font size */
         }
 
         .popup-overlay {
@@ -60,6 +60,14 @@
             background: rgba(0, 0, 0, 0.5);
             z-index: 999;
         }
+
+        .close {
+            cursor: pointer;
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 1em;
+        }
     </style>
 </head>
 <body>
@@ -69,8 +77,8 @@
 
 <!-- Updated Educational Journey Popup -->
 <div id="educationalJourneyPopup" class="popup">
+    <span class="close" onclick="closeEducationalJourney()">&times;</span>
     <div class="popup-content">
-        <span class="close" onclick="closeEducationalJourney()">&times;</span>
         <h2>Educational Journey</h2>
 
         <div class="education-entry">
