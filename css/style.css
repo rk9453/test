@@ -1151,7 +1151,8 @@ ion-icon{
 
 .row-experience:nth-child(even){
   background: #FFFFFF;
-  border-color:white;
+  background: #FFFFFF;
+  border-color:transparent;
 }
 
 .row-experience p{
