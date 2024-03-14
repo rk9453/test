@@ -1,10 +1,222 @@
+00<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Richard. - Easy Onepage Personal Template">
+    <meta name="author" content="Paul">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Ashvin. - My Portfolio</title>
+
+    <style>
+    .section-sm {
+        margin-top: -50px; /* Adjust this value as needed */
+    }
+</style>
+    <!-- Other head elements -->
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <head>
+    <!-- Other head elements -->
+
+    <!-- Font Awesome Solid -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+  </head>
+<body>
+
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Add this CSS to style the popup and overlay */
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border: 1px solid #ccc;
+            background-color: #fff;
+            padding: 15px;
+            z-index: 1000;
+            border-radius: 10px;
+            max-width: 80%; /* Adjust the maximum width as needed */
+            margin: 0px 0;
+        }
+
+        .popup-content {
+            font-size: 14px;
+        }
+
+        .popup h2, .education-entry h3 {
+            font-size: 1em; /* Decreased the font size */
+        }
+
+        .popup-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+        }
+
+        .close {
+            cursor: pointer;
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            font-size: 1em;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Add this overlay div -->
+<div id="popupOverlay" class="popup-overlay"></div>
+
+<!-- Updated Educational Journey Popup -->
+<div id="educationalJourneyPopup" class="popup">
+    <span class="close" onclick="closeEducationalJourney()">&times;</span>
+    <div class="popup-content">
+        <h2>Educational Journey</h2>
+
+        <div class="education-entry">
+            <h3>Purdue University Krannert School of Management</h3>
+            <p><strong>Master of Science in Business Analytics and Information Management</strong></p>
+            <p><strong>GPA:</strong> 3.7/4.0</p>
+            <p><strong>July 2024</strong></p>
+            <p>Academic Honors | Merit Scholarship Recipient</p>
+            <p><strong>Technical Coursework:</strong> Analyzing Unstructured Data, Machine Learning, Data Mining, Cloud Computing, Business Analytics, Visual Analytics, Management of Organizational Data</p>
+        </div>
+
+        <div class="education-entry">
+            <h3>Lahore University of Management Sciences</h3>
+            <p><strong>Bachelor of Science, Accounting and Finance</strong></p>
+            <p><strong>May 2019</strong></p>
+            <p><strong>Relevant Coursework:</strong> Financial Derivatives, Financial Modeling, Corporate Finance, Investments, Financial Reporting, Auditing, Econometrics, Strategic Business Management, Data Driven Marketing, Computational Problem Solving</p>
+        </div>
+
+    </div>
+</div>
+
+<!-- Add this JavaScript code -->
+<script>
+    function openEducationalJourney() {
+        document.getElementById("educationalJourneyPopup").style.display = "block";
+        document.getElementById("popupOverlay").style.display = "block";
+    }
+
+    function closeEducationalJourney() {
+        document.getElementById("educationalJourneyPopup").style.display = "none";
+        document.getElementById("popupOverlay").style.display = "none";
+    }
+</script>
+
+</body>
+</html>
+
+
+   
+   <!-- Loader -->
+   <div class="loader">
+    <div class="spinner"><div class="double-bounce1"></div><div class="double-bounce2"></div></div>
+   </div>
+  
+    <!-- Click capture -->
+   <div class="click-capture d-lg-none"></div>
+
+    <!-- Navbar -->  
+    <nav id="scrollspy" class="navbar navbar-desctop">
+        
+      <div class="d-flex position-relative w-100">
+
+        <!-- Brand-->
+        <a class="navbar-brand" href="#">Ashvin.</a>
+          <ul class="navbar-nav-desctop mr-auto d-none d-lg-block">
+            <li><a class="nav-link" href="#home">Home</a></li>
+            <li><a class="nav-link" href="#about">About</a></li>
+            <li><a class="nav-link" href="#experience">Certifications</a></li>
+            <li><a class="nav-link" href="#news">Projects</a></li>
+            <li><a href="#educationalJourney" onclick="openEducationalJourney()">Educational Journey</a></li>
+                    <!-- Social
+<li><a class="nav-link" href="#testimonials">Testimonials</a></li> -->
+          </ul>
+
+        <!-- Social -->
+<ul class="social-icons mr-auto mr-lg-0 d-none d-sm-block">
+    <li><a href="https://drive.google.com/drive/folders/1b8gKRHKTCCXs2gwfyLgdpOr08JSi9Trz?usp=drive_link"><ion-icon name="cloud-download"></ion-icon></a></li>
+    <li><a href="https://www.linkedin.com/in/ashvinraj97/"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+    <li><a href="https://github.com/ashvinrajpinjani"> <ion-icon name="logo-github"></ion-icon></a></li>
+</ul>
+
+
+        <!-- Toggler -->
+        <button class="toggler d-lg-none ml-auto">
+          <span class="toggler-icon"></span>
+          <span class="toggler-icon"></span>
+          <span class="toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
+
+
+    <!-- Navbar Mobile -->  
+    <nav id="navbar-mobile" class="navbar navbar-mobile d-lg-none">
+      <ion-icon class="close" name="close-outline"></ion-icon>
+
+      <!-- Social -->
+      <ul class="social-icons mr-auto mr-lg-0">
+          <li><a href="https://www.linkedin.com/in/ashvinraj97/"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+          <li><a href="https://github.com/ashvinrajpinjani"> <ion-icon name="logo-github"></ion-icon></a></li>
+      </ul>
+
+      <ul class="navbar-nav navbar-nav-mobile">
+        <li><a class="nav-link" href="#home">Home</a></li>
+        <li><a class="nav-link" href="#about">About</a></li>
+        <li><a class="nav-link" href="#experience">Experience</a></li>
+        <li><a class="nav-link" href="#projects">Projects</a></li>
+        <li><a class="nav-link" href="#testimonials">Testimonials</a></li>
+       </ul>
+       <div class="navbar-mobile-footer">
+        <p>© 2024 Ashvin. All Rights Reserved.</p>
+       </div>
+    </nav>
+
+    <!-- Masthead -->  
+    <main id="home" class="masthead jarallax" style="background-image:url('img/bg/personal.jpg');" role="main">
+      <div class="opener">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-lg-5">
+              <h1>Hey, I am Ashvin.</h1>
+              <p class="lead mt-4 mb-5">Welcome to my dynamic professional world! <br> Currently, I'm diving deep into the fascinating realm of Business Analytics and Information Management with my MS at Purdue University. </p>
+              <button type="button" class="btn" data-toggle="modal" data-target="#send-request">Let's talk</button>
+          </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    
+        <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Educational Journey</title>
+    <title>Your Webpage Title</title>
     <style>
         /* Add your existing CSS styles here */
 
@@ -20,80 +232,135 @@
             margin-bottom: 20px;
         }
 
-        #educationalJourney h2, #educationalJourney h3, #educationalJourney p {
-            color: #333333; /* Fixing the color code */
+        #educationalJourney h2 {
+            color: ##333333;
         }
 
-        /* Loader styles */
-        .loader {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: #fff;
-            z-index: 9999;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        #educationalJourney h3 {
+            color: ##333333;
         }
 
-        .spinner {
-            width: 40px;
-            height: 40px;
-            background-color: #333;
-            border-radius: 50%;
-            animation: spin 1s linear infinite;
-        }
-
-        @keyframes spin {
-            100% {
-                transform: rotate(360deg);
-            }
+        #educationalJourney p {
+            color: ##333333;
         }
     </style>
-</head>
-<body>
-<!-- Loader -->
-<div class="loader">
-    <div class="spinner"></div>
-</div>
 
-<!-- Main content -->
-<main style="display: none;"> <!-- Initially hide the content -->
-    <!-- Header -->
-    <header>
-        <!-- Your header content goes here -->
-    </header>
 
-    <!-- Educational Journey Section -->
-    <section id="educationalJourney">
-        <h2>Educational Journey</h2>
-        <div>
-            <h3>Purdue University Krannert School of Management</h3>
-            <p><strong>Master of Science in Business Analytics and Information Management</strong></p>
-            <p><strong>GPA:</strong> 3.7/4.0</p>
-            <p><strong>July 2024</strong></p>
-            <p>Academic Honors | Merit Scholarship Recipient</p>
-            <p><strong>Technical Coursework:</strong> Analyzing Unstructured Data, Machine Learning, Data Mining, Cloud Computing, Business Analytics, Visual Analytics, Management of Organizational Data</p>
+    <main>
+        <!-- Your existing webpage content goes here -->
+
+        <!-- Educational Journey Section -->
+        <section id="educationalJourney">
+            <h2>Educational Journey</h2>
+            <div>
+                <h3>Purdue University Krannert School of Management</h3>
+                <p><strong>Master of Science in Business Analytics and Information Management</strong></p>
+                <p><strong>GPA:</strong> 3.7/4.0</p>
+                <p><strong>July 2024</strong></p>
+                <p>Academic Honors | Merit Scholarship Recipient</p>
+                <p><strong>Technical Coursework:</strong> Analyzing Unstructured Data, Machine Learning, Data Mining, Cloud Computing, Business Analytics, Visual Analytics, Management of Organizational Data</p>
+            </div>
+
+            <div>
+                <h3>Lahore University of Management Sciences</h3>
+                <p><strong>Bachelor of Science, Accounting and Finance</strong></p>
+                <p><strong>May 2019</strong></p>
+                <p><strong>Relevant Coursework:</strong> Financial Derivatives, Financial Modeling, Corporate Finance, Investments, Financial Reporting, Auditing, Econometrics, Strategic Business Management, Data Driven Marketing, Computational Problem Solving</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Your existing footer content goes here -->
+    </footer>
+
+    <script>
+        // JavaScript functions to open and close the educational journey popup
+        function openEducationalJourney() {
+            // You can add code here to scroll to the educationalJourney section
+        }
+
+        function closeEducationalJourney() {
+            // You can add code here to close the educationalJourney section
+        }
+    </script>
+</body>
+</html>
+    
+    <!-- Footer -->  
+    <footer>
+      <div class="section bg-dark py-5 pb-0">
+        <div class="container">
+          <div class="row">
+           <div class="col-md-6 col-lg-3">
+             <h6 class="text-white mb-4">Phone:</h6>
+             <p class="text-white mb-4">‪+1 (765) 694‑9855‬:</p>
+            </div>
+            <div class="col-md-6 col-lg-3">
+             <h6 class="text-white mb-4">Email:</h6>
+             <p class="text-white mb-4">raj53@purdue.edu</p>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <h6 class="text-white mb-4">Follow me:</h6>
+              <ul class="social-icons">
+             <li><a href="https://www.facebook.com/ashvin.raj.5243"><ion-icon name="logo-facebook"></ion-icon></a></li>
+           <li><a href="https://www.linkedin.com/in/ashvinraj97/"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+           <li><a href="https://github.com/ashvinrajpinjani"> <ion-icon name="logo-github"></ion-icon></a></li>
+            </ul>
+            </div>
+          </div>
         </div>
-
-        <div>
-            <h3>Lahore University of Management Sciences</h3>
-            <p><strong>Bachelor of Science, Accounting and Finance</strong></p>
-            <p><strong>May 2019</strong></p>
-            <p><strong>Relevant Coursework:</strong> Financial Derivatives, Financial Modeling, Corporate Finance, Investments, Financial Reporting, Auditing, Econometrics, Strategic Business Management, Data Driven Marketing, Computational Problem Solving</p>
+      </div>
+      <div class="footer-copy section-sm">
+        <div class="container">© Copyright 2024 Ashvin. All Rights Reserved</div>
+       </div>
+    </footer>
+     
+    <!-- Modal -->
+    <div class="modal fade" id="send-request">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title mt-0">Send request</h2>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Leave your contacts and our managers
+will contact you soon.</p>
+           <form class="form-request js-ajax-form">
+             <div class="form-group">
+               <input type="text" name="name" class="form-control" placeholder="Name">
+            </div>
+             <div class="form-group">
+               <input type="email" name="email"  class="form-control" required="" placeholder="Email *">
+             </div>
+             <div class="form-group">
+              <textarea rows="3" name="message"  class="form-control" placeholder="Message"></textarea>
+             </div>
+             <div class="message" id="success-message">Your message is successfully sent...</div>
+             <div class="message" id="error-message">Sorry something went wrong</div>
+             <div class="form-group mb-0 text-right">
+               <button type="submit" class="btn">Submit</button>
+             </div>
+            </form>
+          </div>
         </div>
-    </section>
-</main>
-
-<!-- JavaScript to hide the loader and show the content when the page is loaded -->
-<script>
-    window.addEventListener('load', function () {
-        document.querySelector('.loader').style.display = 'none';
-        document.querySelector('main').style.display = 'block';
-    });
-</script>
-
+      </div>
+    </div>
+    
+<!-- Optional JavaScript -->
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/popper.min.js" ></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+<script src="js/jarallax.min.js"></script>
+<script src="js/jquery.ajaxchimp.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/aos.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/interface.js"></script>
 </body>
 </html>
